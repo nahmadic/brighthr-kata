@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BrightHR Kata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/app.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="header">
+      <div class="header__inner">
+        <h1 class="header__title">BrightHR Kata</h1>
+        <p class="header__credit">Built by <a href="https://ryanbrowne.io" target="_blank">Ryan Browne</a></p>
+      </div>
+    </div>
+    <div class="filters-container">
+      <div class="filter">
+        <label for="document-sort">Sort by</label>
+        <select id="document-sort">
+          <option value="">--Please choose--</option>
+          <option value="name">Name</option>
+          <option value="type">File Type</option>
+          <option value="added">Date</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="document-search">Search</label>
+        <input type="text" id="document-search" placeholder="Enter a name to search for..." />
+        <button id="search-submit">Search</button>
+      </div>
+    </div>
+    <div class="documents-container">
+    </div>
+  </div>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

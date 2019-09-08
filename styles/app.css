@@ -1,0 +1,148 @@
+/* Some variable setup */
+:root {
+  --color-dark: #1C2329;
+  --color-light: #FFF;
+  --color-off-light: #ABB7BD;
+  --color-brand-primary: #55BAF7;
+  --color-brand-secondary: #FF0078;
+}
+
+/* Minor resets and typography changes */
+body {
+  background-color: var(--color-dark);
+  color: var(--color-off-light);
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 54px;
+  color: var(--color-light);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px; 
+  line-height: 26px;
+  margin: 0;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  color: var(--color-brand-primary);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header area */
+.header {
+  margin-bottom: 40px;
+}
+
+.header__credit {
+  text-align: center;
+}
+
+.filters-container {
+  margin-bottom: 20px;
+}
+
+.filter {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.document,
+.folder__header {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-radius: 3px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon--folder {
+  background-image: url('../images/folder.svg');
+}
+
+.icon--pdf {
+  background-image: url('../images/pdf.svg');
+}
+
+.icon--doc {
+  background-image: url('../images/doc.svg');
+}
+.icon--csv {
+  background-image: url('../images/csv.svg');
+}
+.icon--mov {
+  background-image: url('../images/mov.svg');
+}
+
+.icon--arrow {
+  background-image: url('../images/arrow.svg');
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.folder__header {
+  cursor: pointer;
+}
+
+.folder__content {
+  padding-left: 40px;
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.folder.open .icon--arrow {
+  transform: rotate(180deg);
+}
+
+.folder.open .folder__content {
+  max-height: 600px;
+}
